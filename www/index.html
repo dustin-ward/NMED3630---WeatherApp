@@ -33,7 +33,8 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/weatherApp.css">
+        <!-- <link rel="stylesheet" href="css/index.css"> -->
         <link rel="stylesheet" href="css/weather-icons.css">
         <link rel="stylesheet" href="css/weather-icons-wind.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -49,59 +50,24 @@
         </div>
         <div class="today">
             <h2>Today's Weather <i class="wi wi-day-sunny"></i></h2>
-            <h4>Temp.</h4><p><p id="temp"></p>&deg;C - Clear Skies</p>
-            <h4>Wind</h4><p>10km/h</p>
-            <h4>Humidity</h4><p>30%</p>
-            <h4>Low</h4><p>19</p>
-            <h4>High</h4><p>29</p>
-        </div>
-        <div class="forecast">
-            <h2>This Week:</h2>
-            <ul>
-                <li>
-                    <span>
-                        <h3>Sunday</h3>
-                        <p>17-27</p>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <h3>Monday</h3> 
-                        <p>19-33</p>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <h3>Tuesday</h3>
-                        <p>16-25</p>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <h3>wednesday</h3>
-                        <p>16-25</p>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <h3>Thursday</h3>
-                        <p>16-25</p>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <h3>Friday</h3>
-                        <p>16-25</p>
-                    </span>
-                </li>
-                <li>
-                    <span>
-                        <h3>Saturday</h3>
-                        <p>16-25</p>
-                    </span>
-                </li>
-
-            </ul>
+            <div class="today-box">
+                <h4>Temp.</h4><p><p id="temp"></p>&deg;C</p>
+            </div>
+            <div class="today-box">
+                <h4>Desc.</h4><p id="description">Windy</p>
+            </div>
+            <div class="today-box">
+                <h4>Wind</h4><p><p id="wind">10</p>km/h</p>
+            </div>
+            <div class="today-box">
+                <h4>Hum.</h4><p><p id="humidity">30</p>%</p>
+            </div>
+            <div class="today-box">
+                <h4>Low</h4><p><p id="mintemp">19</p>&deg;C</p>
+            </div>
+            <div class="today-box">
+                <h4>High</h4><p><p id="maxtemp">29</p>&deg;C</p>
+            </div>
         </div>
         <script src="cordova.js"></script>
         <script src="js/index.js"></script>

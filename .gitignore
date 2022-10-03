@@ -25,4 +25,4 @@ node_modules/
 /plugins/
 /platforms/
 
-./js/key.js
+www/js/key.js
