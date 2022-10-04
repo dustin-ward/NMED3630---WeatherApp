@@ -1,15 +1,11 @@
 var xmlhttp;
 var weatherURL;
 
-// import * as config from './key.js';
-
 // var APIkey = "" //insert your API key from open weather map https://home.openweathermap.org/users/sign_up
 var location_key = "lethbridge,ca"; // option to change location 
 
 window.onload = function () {  
-    // console.log(config.APIkey, config.weatherURL)
-    // weatherURL = config.weatherURL
-    // weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=" + location_key + "&units=metric&APPID=" + APIkey;
+    weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=lethbridge,ca&units=metric&APPID=APIKey"
     weather();
 }
 

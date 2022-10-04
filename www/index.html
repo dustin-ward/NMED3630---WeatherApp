@@ -34,11 +34,10 @@
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/weatherApp.css">
-        <!-- <link rel="stylesheet" href="css/index.css"> -->
         <link rel="stylesheet" href="css/weather-icons.css">
         <link rel="stylesheet" href="css/weather-icons-wind.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <title>Hello World</title>
+        <title>Weather App</title>
     </head>
     <body>
         <div class="title">
@@ -51,22 +50,34 @@
         <div class="today">
             <h2>Today's Weather <i class="wi wi-day-sunny"></i></h2>
             <div class="today-box">
-                <h4>Temp.</h4><p><p id="temp"></p>&deg;C</p>
+                <h4>Temp.</h4>
+                <span class="material-icons">calendar_today</span>
+                <p><p id="temp"></p>&deg;C</p>
             </div>
             <div class="today-box">
-                <h4>Desc.</h4><p id="description">Windy</p>
+                <h4>Desc.</h4>
+                <span class="material-icons">description</span>
+                <p id="description">Windy</p>
             </div>
             <div class="today-box">
-                <h4>Wind</h4><p><p id="wind">10</p>km/h</p>
+                <h4>Wind</h4>
+                <i class="wi wi-strong-wind"></i>
+                <p><p id="wind">10</p>km/h</p>
             </div>
             <div class="today-box">
-                <h4>Hum.</h4><p><p id="humidity">30</p>%</p>
+                <h4>Hum.</h4>
+                <i class="wi wi-humidity"></i>
+                <p><p id="humidity">30</p>%</p>
             </div>
             <div class="today-box">
-                <h4>Low</h4><p><p id="mintemp">19</p>&deg;C</p>
+                <h4>Low</h4>
+                <i class="wi wi-cloud-down"></i>
+                <p><p id="mintemp">19</p>&deg;C</p>
             </div>
             <div class="today-box">
-                <h4>High</h4><p><p id="maxtemp">29</p>&deg;C</p>
+                <h4>High</h4>
+                <i class="wi wi-cloud-up"></i>
+                <p><p id="maxtemp">29</p>&deg;C</p>
             </div>
         </div>
         <script src="cordova.js"></script>
